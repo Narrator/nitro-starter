@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "routes": [
+    {
+      "path": "/*",
+      "target": {
+        "kind": "Compute",
+        "src": "default"
+      }
+    }
+  ],
+  "computeResources": [
+    {
+      "name": "default",
+      "entrypoint": "server.js",
+      "runtime": "nodejs18.x"
+    }
+  ],
+  "framework": {
+    "name": "nitro",
+    "version": "2.8.0-28335617.0f38eb6"
+  }
+}
